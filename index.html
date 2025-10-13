@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Software Engineer | Retro Portfolio</title>
+    <meta name="description" content="Portfolio of a Software Engineer" />
+    <meta name="author" content="SWE Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap">
+
+      <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/manifest.json">
+      <meta name="msapplication-TileColor" content="#00334D">
+      <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+      <meta name="theme-color" content="#00334D">
+
+    <meta property="og:title" content="Software Engineer | Retro Portfolio" />
+    <meta property="og:description" content="Personal portfolio showcasing software engineering skills with a retro Turbo Vision aesthetic" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://radically-tolerant-mako.ngrok-free.app/screenshot.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@xxx" />
+    <meta name="twitter:image" content="https://radically-tolerant-mako.ngrok-free.app/screenshot.png" />
+    <script type="module" crossorigin src="/assets/index-DVdHAd07.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DGAUs-s7.css">
+  </head>
+
+  <body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+        <filter id="SphereMapTest" filterUnits="objectBoundingBox" x="-0.45" y="-1.29" width="1.6" height="3.5">
+            <feImage id="mapa" result="Map" xlink:href="/img/sphere_wide_1.png"/>
+            <feDisplacementMap id="despMap" in="SourceGraphic" in2="map" scale="100" xChannelSelector="R" yChannelSelector="G"/>
+        </filter>
+        <filter id="colorfill" z-index="1">
+            <feColorMatrix id="colorMain" type="matrix" in="SourceGraphic" result="B" values="
+				1	0	0	0	0
+				0	1	0	0	0
+				0	0	1	0	0
+				0	0	0	1	0
+				">
+                <animate id="colA" attributeName="values" begin="0s" dur="3.5s" restart_="always" repeatCount="1" values="
+				1	0	0	0	0
+				0	1	0	0	0
+				0	0	1	0	0
+				0	0	0	1	0;
+				1	0	0	0	0
+				0	1	0	0	0
+				0	0	1	0	0
+				0	0	0	1	0
+			" fill="remove"/>
+            </feColorMatrix>
+            <feMerge>
+                <feMergeNode in="A"/>
+                <feMergeNode in="B"/>
+            </feMerge>
+        </filter>
+        <filter id="secondFill" z-index="0">
+            <feColorMatrix id="colorSec" type="matrix" in="SourceGraphic" values="
+				0	0	0	0	0
+				0	1	0	0	0
+				0	0	0	0	0
+				0	0	0	1	0
+                 "/>
+        </filter>
+        <filter id="brightness">
+            <feComponentTransfer>
+                <feFuncR id="brR" type="linear" slope="1"/>
+                <feFuncG id="brG" type="linear" slope="1"/>
+                <feFuncB id="brB" type="linear" slope="1"/>
+            </feComponentTransfer>
+        </filter>
+        <filter id="contrast">
+            <feComponentTransfer>
+                <feFuncR id="conR" type="linear" slope="1" intercept="0"/>
+                <feFuncG id="conG" type="linear" slope="1" intercept="0"/>
+                <feFuncB id="conB" type="linear" slope="1" intercept="0"/>
+            </feComponentTransfer>
+        </filter>
+        <filter id="grain" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB">
+            <!-- 1) make noise -->
+            <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="2" result="noise"/>
+            <!-- 2) tame it (optional) -->
+            <feColorMatrix in="noise" type="saturate" values="0" result="noise"/>
+            <!-- 3) blend noise over your app -->
+            <feBlend in="SourceGraphic" in2="noise" mode="soft-light" result="blended"/>
+            <!-- 4) output the blended image -->
+            <feComposite in="blended" in2="SourceGraphic" operator="over"/>
+        </filter>
+    </defs>
+</svg>
+  </body>
+</html>
